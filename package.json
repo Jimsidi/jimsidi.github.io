@@ -15,7 +15,7 @@
     "test:coverage": "vitest run --coverage",
     "prepare": "husky"
   },
-    "lint-staged": {
+  "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "eslint --fix",
       "prettier --write"
@@ -25,6 +25,7 @@
     ]
   },
   "dependencies": {
+    "lucide-react": "^1.14.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },

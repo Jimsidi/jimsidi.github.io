@@ -691,3 +691,27 @@ section {
   font-size: 0.75rem;
   color: var(--text-muted);
 }
+
+/* ── Navbar Social ────────────────────────────────────────── */
+.navbar__social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__social-link {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.navbar__social-link:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .navbar__social {
+    display: none;
+  }
+}
