@@ -9,6 +9,16 @@ const navLinks = [
   { label: 'Contact', href: '#contact' },
 ]
 
+const socialLinks = [
+  { icon: GitHubIcon, href: 'https://github.com/Jimsidi', label: 'GitHub' },
+  {
+    icon: LinkedInIcon,
+    href: 'https://www.linkedin.com/in/dimitris-sidiropoulos-831429288',
+    label: 'LinkedIn',
+  },
+  { icon: MailIcon, href: 'mailto:dimsidiropoulos@hotmail.com', label: 'Email' },
+]
+
 function GitHubIcon() {
   return (
     <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
@@ -43,22 +53,37 @@ function MailIcon() {
   )
 }
 
-const socialLinks = [
-  { icon: GitHubIcon, href: 'https://github.com/Jimsidi', label: 'GitHub' },
-  {
-    icon: LinkedInIcon,
-    href: 'https://www.linkedin.com/in/dimitris-sidiropoulos-831429288',
-    label: 'LinkedIn',
-  },
-  { icon: MailIcon, href: 'mailto:dimsidiropoulos@hotmail.com', label: 'Email' },
-]
-
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50)
+    const onScroll = () => {
+      setScrolled(window.scrollY > 50)
+
+      const sections = navLinks.map(link => link.href.replace('#', ''))
+      let current = ''
+
+      const nearBottom = window.innerHeight + window.scrollY >= document.body.scrollHeight - 200
+
+      if (nearBottom) {
+        current = sections[sections.length - 1]
+      } else {
+        for (const id of sections) {
+          const el = document.getElementById(id)
+          if (el) {
+            const rect = el.getBoundingClientRect()
+            if (rect.top <= 120) {
+              current = id
+            }
+          }
+        }
+      }
+
+      setActiveSection(current)
+    }
+
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -83,13 +108,21 @@ function Navbar() {
         </a>
 
         <ul className={linksClass}>
-          {navLinks.map(link => (
-            <li key={link.href}>
-              <a href={link.href} className="navbar__link" onClick={closeMenu}>
-                {link.label}
-              </a>
-            </li>
-          ))}
+          {navLinks.map(link => {
+            const id = link.href.replace('#', '')
+            const isActive = activeSection === id
+            return (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className={`navbar__link ${isActive ? 'navbar__link--active' : ''}`}
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </a>
+              </li>
+            )
+          })}
         </ul>
 
         <div className="navbar__social">

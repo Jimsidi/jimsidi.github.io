@@ -6,6 +6,8 @@ import Projects from './components/Projects'
 import Certifications from './components/Certifications'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import AnimatedSection from './components/AnimatedSection'
+import BackToTop from './components/BackToTop'
 
 function App() {
   return (
@@ -13,13 +15,24 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Contact />
+        <AnimatedSection>
+          <Skills />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Experience />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Projects />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Certifications />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Contact />
+        </AnimatedSection>
       </main>
       <Footer />
+      <BackToTop />
     </>
   )
 }
