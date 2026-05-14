@@ -8,11 +8,23 @@ Personal portfolio website built with React, TypeScript, and Vite.
 
 - React 18 + TypeScript
 - Vite
+- Framer Motion — animations
+- Lucide React — icons
 - Vitest + Testing Library
+
+## Sections
+
+- **Hero** — introduction and call to action
+- **About** — bio, education, and personal details
+- **Skills** — tech stack grouped by category
+- **Experience** — work history timeline
+- **Projects** — personal, professional, and academic projects
+- **Certifications** — completed and in-progress certifications
+- **Contact** — email, LinkedIn, and GitHub
 
 ## DevOps
 
-- ESLint + Prettier — code quality
+- ESLint + Prettier — code quality and formatting
 - Husky + lint-staged — pre-commit hooks
 - Commitlint — conventional commit messages
 - GitHub Actions — CI/CD pipeline (lint → test → build → deploy)
@@ -21,10 +33,16 @@ Personal portfolio website built with React, TypeScript, and Vite.
 ## Development
 
 ```bash
-npm install       # install dependencies
-npm run dev       # start dev server
-npm run build     # production build
-npm run test      # run tests
-npm run lint      # run linter
-npm run format    # format code
+npm install          # install dependencies
+npm run dev          # start dev server
+npm run build        # production build
+npm run test         # run tests
+npm run lint         # run linter
+npm run format       # format code
+npm run type-check   # typescript check
 ```
+
+## Branch Strategy
+
+- `main` — production, auto-deploys to GitHub Pages
+- Feature branches — open a PR, CI must pass before merging
