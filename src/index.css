@@ -548,3 +548,70 @@ section {
   color: #a0855a;
   border: 1px solid rgba(160, 130, 80, 0.2);
 }
+
+/* ── Certifications ───────────────────────────────────────── */
+.certs__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.cert__card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: border-color 0.2s ease;
+}
+
+.cert__card:hover {
+  border-color: var(--accent-border);
+}
+
+.cert__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.cert__status {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius);
+}
+
+.cert__status--completed {
+  background: rgba(74, 124, 95, 0.12);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+}
+
+.cert__status--in-progress {
+  background: rgba(160, 130, 80, 0.1);
+  color: #a0855a;
+  border: 1px solid rgba(160, 130, 80, 0.2);
+}
+
+.cert__date {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.cert__title {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.cert__issuer {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
