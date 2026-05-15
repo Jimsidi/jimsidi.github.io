@@ -16,7 +16,7 @@ const experiences = [
     role: 'IT Systems Technician – Military Service',
     company: 'Hellenic Air Force – General Staff',
     location: 'Cholargos, Athens',
-    period: '2025 — 2026',
+    period: '2025 — March 2026',
     current: false,
     bullets: [
       'Delivered IT support and technical consulting to 500+ military and civilian personnel.',
