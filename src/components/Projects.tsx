@@ -7,6 +7,13 @@ const projects = [
       'This portfolio website — built with React and TypeScript, deployed automatically via a CI/CD pipeline with GitHub Actions to GitHub Pages.',
   },
   {
+    title: 'Snip — URL Shortener',
+    type: 'Personal Project',
+    stack: ['Python', 'FastAPI', 'Docker', 'GitHub Actions', 'Render', 'SQLite'],
+    description:
+      'A minimal, production-ready URL shortener with custom short codes and click analytics. Fully Dockerized with a multi-stage build, pushed to Docker Hub, and deployed on Render. CI/CD pipeline runs pytest on every push to main, builds and pushes the Docker image, then triggers an auto-deploy on Render.',
+  },
+  {
     title: 'F1 Telemetry Dashboard',
     type: 'Personal Project',
     stack: ['Python', 'Dash', 'FastF1', 'GitHub Actions', 'Render'],
