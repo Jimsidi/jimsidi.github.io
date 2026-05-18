@@ -14,6 +14,22 @@ const projects = [
       'A minimal, production-ready URL shortener with custom short codes and click analytics. Fully Dockerized with a multi-stage build, pushed to Docker Hub, and deployed on Render. CI/CD pipeline runs pytest on every push to main, builds and pushes the Docker image, then triggers an auto-deploy on Render.',
   },
   {
+    title: 'Secure Note API — DevSecOps Demo',
+    type: 'Personal Project',
+    stack: [
+      'Python',
+      'FastAPI',
+      'Docker',
+      'GitHub Actions',
+      'Bandit',
+      'Semgrep',
+      'Trivy',
+      'OWASP ZAP',
+    ],
+    description:
+      'A production-grade DevSecOps demo integrating security at every stage of the CI/CD pipeline. Automated security pipeline covers unit tests, SAST (Bandit + Semgrep), secret scanning (Gitleaks), dependency auditing (pip-audit), container scanning (Trivy), and live attack simulation with OWASP ZAP (119/119 passing). During development the pipeline caught and fixed 4 real CVEs including high severity Starlette vulnerabilities.',
+  },
+  {
     title: 'F1 Telemetry Dashboard',
     type: 'Personal Project',
     stack: ['Python', 'Dash', 'FastF1', 'GitHub Actions', 'Render'],
