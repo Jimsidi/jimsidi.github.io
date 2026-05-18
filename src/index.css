@@ -834,3 +834,28 @@ section {
     gap: 2rem;
   }
 }
+
+/* ── Project Footer ───────────────────────────────────────── */
+.project__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.project__repo {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.project__repo:hover {
+  color: var(--accent);
+}
