@@ -19,6 +19,7 @@ Personal portfolio website built with React, TypeScript, and Vite.
 - **Skills** — tech stack grouped by category
 - **Experience** — work history timeline
 - **Projects** — personal, professional, and academic projects
+- **Homelab** — self-hosted infrastructure, services, and hardware
 - **Certifications** — completed and in-progress certifications
 - **Contact** — email, LinkedIn, and GitHub
 
@@ -27,7 +28,8 @@ Personal portfolio website built with React, TypeScript, and Vite.
 - ESLint + Prettier — code quality and formatting
 - Husky + lint-staged — pre-commit hooks
 - Commitlint — conventional commit messages
-- GitHub Actions — CI/CD pipeline (lint → test → build → deploy)
+- GitHub Actions — CI/CD pipeline (lint → test → build → Lighthouse → deploy)
+- Lighthouse CI — performance monitoring on every push
 - Dependabot — automated dependency updates
 
 ## Development
