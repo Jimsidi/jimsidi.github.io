@@ -160,6 +160,7 @@ section {
   display: flex;
   list-style: none;
   gap: 2.5rem;
+  margin-left: 2rem;
 }
 
 .navbar__link {
@@ -697,6 +698,7 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-left: 2rem;
 }
 
 .navbar__social-link {
@@ -858,4 +860,155 @@ section {
 
 .project__repo:hover {
   color: var(--accent);
+}
+
+/* ── Homelab ──────────────────────────────────────────────── */
+.homelab__intro {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 680px;
+  margin-bottom: 3rem;
+}
+
+.homelab__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.homelab__col-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.homelab__services {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.homelab__service {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.homelab__service:hover {
+  border-color: var(--accent-border);
+}
+
+.homelab__service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.homelab__service-name {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.homelab__service-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+}
+
+.homelab__status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s infinite;
+}
+
+.homelab__service-status--planned .homelab__status-dot {
+  background: #a0855a;
+  animation: none;
+}
+
+.homelab__service-status--planned {
+  color: #a0855a;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.homelab__service-desc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.homelab__service-url {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.homelab__details {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.homelab__detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.homelab__detail-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.homelab__detail-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.homelab__detail-value {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+@media (max-width: 640px) {
+  .homelab__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
