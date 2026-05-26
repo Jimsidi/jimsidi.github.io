@@ -1,7 +1,7 @@
 const skillGroups = [
   {
     category: 'Programming & Scripting',
-    skills: ['Python', 'JavaScript', 'Java', 'Bash', 'Google Apps Script', 'C#'],
+    skills: ['Python', 'JavaScript', 'Java', 'C#', 'Bash', 'Google Apps Script'],
   },
   {
     category: 'Systems & Infrastructure',
@@ -9,11 +9,23 @@ const skillGroups = [
   },
   {
     category: 'Networking',
-    skills: ['TCP/IP', 'Network Troubleshooting', 'IPsec', 'L2TP', 'DNS', 'DHCP'],
+    skills: [
+      'TCP/IP',
+      'IPsec',
+      'L2TP',
+      'DNS',
+      'DHCP',
+      'Network Troubleshooting',
+      'CCNA (in progress)',
+    ],
   },
   {
     category: 'DevOps & Cloud',
-    skills: ['Git', 'GitHub Actions', 'CI/CD', 'AWS (in progress)', 'CCNA (in progress)'],
+    skills: ['Git', 'GitHub Actions', 'CI/CD', 'Docker', 'AWS (in progress)'],
+  },
+  {
+    category: 'Databases',
+    skills: ['SQL', 'PostgreSQL', 'SQLite'],
   },
   {
     category: 'Web & Tools',
