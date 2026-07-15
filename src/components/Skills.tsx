@@ -29,7 +29,7 @@ const skillGroups = [
   },
   {
     category: 'Web & Tools',
-    skills: ['WordPress', 'REST APIs', 'Web Scraping', 'Glide', 'React'],
+    skills: ['WordPress', 'React', 'REST APIs', 'Web Scraping', 'Glide'],
   },
 ]
 

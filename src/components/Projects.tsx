@@ -1,5 +1,19 @@
 const projects = [
   {
+    title: 'Two-Sided Marketplace Platform',
+    type: 'Personal Project',
+    stack: ['Next.js 15', 'TypeScript', 'Supabase', 'PostgreSQL', 'Vercel', 'Tailwind CSS'],
+    description:
+      'A two-sided marketplace connecting property owners with vetted professionals across Greece — covering property management, maintenance, and renovation. Professional identity is hidden until post-match, positioning the platform as the essential connector. Built with Next.js 15 App Router, Supabase for auth and database with Row Level Security, and deployed on Vercel.',
+  },
+  {
+    title: 'Dental Practice Management App',
+    type: 'Professional Project',
+    stack: ['Next.js 15', 'TypeScript', 'Supabase', 'PostgreSQL', 'Google Calendar API', 'Vercel'],
+    description:
+      'A private client project built for a dental practice to streamline daily operations. Features full patient management, appointment booking with Google Calendar integration, automated cleaning reminders, and appointment cancellation handling. Built with Next.js 15 Server Actions, Supabase with Row Level Security, and deployed on Vercel.',
+  },
+  {
     title: 'Personal Portfolio',
     type: 'Personal Project',
     repo: 'https://github.com/Jimsidi/jimsidi.github.io',
@@ -67,20 +81,6 @@ const projects = [
     stack: ['Python', 'Web Scraping'],
     description:
       'A Python web scraper designed and deployed for Tilderist to identify potential clients whose websites were missing legally required documentation. Generated a qualified lead pipeline and delivered direct business value.',
-  },
-  {
-    title: 'Todos API',
-    type: 'Academic Project',
-    stack: ['Ruby on Rails', 'Swagger', 'HTTPie'],
-    description:
-      'A RESTful API for managing to-do lists, built with Ruby on Rails. Tested and documented using HTTPie and Swagger.',
-  },
-  {
-    title: 'CollaboraMate',
-    type: 'Academic Project',
-    stack: ['Ruby on Rails'],
-    description:
-      'A Rails platform where people can find and chat with others who share similar hobbies, interests, or courses — facilitating the formation of workgroups and enhancing collaboration.',
   },
 ]
 

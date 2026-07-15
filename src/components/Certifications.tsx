@@ -6,12 +6,6 @@ const certifications = [
     status: 'in-progress',
   },
   {
-    title: 'AWS Certified Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    date: 'In progress',
-    status: 'in-progress',
-  },
-  {
     title: 'Introduction to Cybersecurity',
     issuer: 'Cisco Networking Academy',
     date: 'January 2026',
