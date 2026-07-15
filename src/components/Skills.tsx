@@ -21,7 +21,7 @@ const skillGroups = [
   },
   {
     category: 'DevOps & Cloud',
-    skills: ['Git', 'GitHub Actions', 'CI/CD', 'Docker', 'AWS (in progress)'],
+    skills: ['Git', 'GitHub Actions', 'CI/CD', 'Docker'],
   },
   {
     category: 'Databases',

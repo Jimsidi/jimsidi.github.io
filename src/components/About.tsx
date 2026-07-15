@@ -17,9 +17,8 @@ function About() {
               automation pipelines for private companies.
             </p>
             <p>
-              Outside of work I'm currently pursuing my CCNA and AWS Cloud Practitioner
-              certifications, and I enjoy working on personal projects that combine infrastructure
-              thinking with software development.
+              Outside of work I'm currently pursuing my CCNA certification, and I enjoy working on
+              personal projects that combine infrastructure thinking with software development.
             </p>
           </div>
           <div className="about__details">
