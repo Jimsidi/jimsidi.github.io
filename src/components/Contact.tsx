@@ -6,8 +6,11 @@ function Contact() {
         <h2 className="section-title">Contact</h2>
         <div className="contact__inner">
           <p className="contact__text">
-            I am currently open to new opportunities. Whether you have a question, a project in
-            mind, or just want to connect — feel free to reach out.
+            <p className="contact__text">
+              I'm currently not looking for new opportunities, but I'm always happy to connect.
+              Whether you have a question, want to talk tech, or just want to say hi — feel free to
+              reach out.
+            </p>
           </p>
           <div className="contact__links">
             <a href="mailto:dimsidiropoulos@hotmail.com" className="contact__link">
