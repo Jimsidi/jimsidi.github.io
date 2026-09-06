@@ -7,14 +7,15 @@ function About() {
         <div className="about__inner">
           <div className="about__text">
             <p>
-              I'm an IT Systems Engineer based in Athens, Greece, with a BSc in Computer Science
-              from the University of Piraeus. I enjoy working at the intersection of infrastructure
-              and software — designing systems that are secure, reliable, and efficient.
+              I'm an ICT Administrator based in Athens, Greece, with a BSc in Computer Science from
+              the University of Piraeus. I enjoy working at the intersection of infrastructure and
+              software — designing systems that are secure, reliable, and efficient.
             </p>
             <p>
-              My experience spans from being the sole IT administrator for a law firm, to supporting
-              500+ personnel at the Hellenic Air Force General Staff, to building internal tools and
-              automation pipelines for private companies.
+              My experience spans from managing the full IT infrastructure at Homeward Development
+              for three years, to supporting 500+ personnel at the Hellenic Air Force General Staff,
+              to now working in the maritime industry as ICT Administrator at Angelakos (Hellas)
+              S.A.
             </p>
             <p>
               Outside of work I'm currently pursuing my CCNA certification, and I enjoy working on
@@ -44,8 +45,8 @@ function About() {
             </div>
             <div className="about__detail-item">
               <span className="about__detail-label">Status</span>
-              <span className="about__detail-value about__detail-value--available">
-                Open to opportunities
+              <span className="about__detail-value about__detail-value--unavailable">
+                Not looking for new opportunities
               </span>
             </div>
           </div>

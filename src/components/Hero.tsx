@@ -26,7 +26,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          IT Systems Engineer & Developer.
+          ICT Administrator & Systems Engineer.
         </motion.h2>
         <motion.p
           className="hero__bio"
@@ -34,9 +34,9 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Based in Athens, Greece. I design and maintain secure infrastructure, automate workflows,
-          and build software that makes systems run better. Currently expanding into cloud
-          technologies and networking.
+          Based in Athens, Greece. Currently working in maritime IT at Angelakos (Hellas) S.A.,
+          managing onshore infrastructure and vessel IT operations. I design secure systems,
+          automate workflows, and build software that makes operations run better.
         </motion.p>
         <motion.div
           className="hero__actions"

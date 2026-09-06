@@ -1012,3 +1012,7 @@ section {
     gap: 2rem;
   }
 }
+
+.about__detail-value--unavailable {
+  color: var(--text-muted);
+}
