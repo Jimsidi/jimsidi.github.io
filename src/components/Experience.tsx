@@ -1,15 +1,15 @@
 const experiences = [
   {
-    role: 'IT Systems & Software Engineer',
-    company: 'Homeward Development',
-    location: 'Glyfada, Greece',
-    period: 'May 2023 — Present',
+    role: 'ICT Administrator',
+    company: 'Angelakos (Hellas) S.A.',
+    location: 'Palaio Faliro, Greece',
+    period: 'Aug 2026 — Present',
     current: true,
     bullets: [
-      'Designed and maintained IT infrastructure including NAS file servers and VPN servers supporting 20+ employees across multiple sites.',
-      'Administered Microsoft 365 environment with zero reported downtime over a 2-year period.',
-      'Built and maintained the company WordPress website serving as the primary digital storefront.',
-      'Developed a company-wide mobile app (Glide) replacing manual spreadsheet workflows for the full team.',
+      'Responsible for the full ICT infrastructure of a maritime company, managing onshore systems and supporting vessel IT operations.',
+      'Administering network infrastructure, servers, and workstations across company sites.',
+      'Supporting ship-to-shore connectivity and maritime-specific IT systems.',
+      'Ensuring secure and reliable operation of critical business and operational systems.',
     ],
   },
   {
@@ -26,9 +26,22 @@ const experiences = [
     ],
   },
   {
+    role: 'IT Systems & Software Engineer',
+    company: 'Homeward Development',
+    location: 'Glyfada, Greece',
+    period: 'May 2023 — June 2026',
+    current: false,
+    bullets: [
+      'Designed and maintained IT infrastructure including NAS file servers and VPN servers supporting 20+ employees across multiple sites.',
+      'Administered Microsoft 365 environment with zero reported downtime over a 2-year period.',
+      'Built and maintained the company WordPress website serving as the primary digital storefront.',
+      'Developed a company-wide mobile app (Glide) replacing manual spreadsheet workflows for the full team.',
+    ],
+  },
+  {
     role: 'System Administrator',
     company: 'StamatopoulosEftychidou Law Firm',
-    location: 'Athens',
+    location: 'Athens, Greece',
     period: 'Nov 2022 — Sep 2024',
     current: false,
     bullets: [
